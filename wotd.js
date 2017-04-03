@@ -11,7 +11,7 @@ function httpGetAsync(theUrl, callback) {
 
 var wotdString="";
 function getWotd(){
-  httpGetAsync("https://www.dictionary.com/wordoftheday/wotd2.js", snip);
+  httpGetAsync("http://www.dictionary.com/wordoftheday/archive/2017/04/02.html", snip);
   return wotdString;
 }
 
