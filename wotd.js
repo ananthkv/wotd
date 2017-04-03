@@ -9,10 +9,12 @@ function httpGetAsync(theUrl, callback) {
     xmlHttp.send(null);
 }
 
+var wotdString="";
 function getWotd(){
-  httpGetAsync("http://www.dictionary.com/wordoftheday/wotd2.js", content);
+  httpGetAsync("http://www.dictionary.com/wordoftheday/wotd2.js", snip);
+  return wotdString;
 }
 
 function snip(content) {
-  alert(content);
+  wotdString = content;
 }
